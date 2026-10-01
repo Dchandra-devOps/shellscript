@@ -11,7 +11,7 @@ echo "Total: $SUM"
 
 MOVIES=("erumudi","mandada","paradise")
 
-echo "All movies recent: ${[$@]}"
+echo "All movies recent: ${[MOVIES[@]}"
 
-echo "Good Movie: ${[$1]}"
+echo "Good Movie: ${[MOVIES[1]}"
 
