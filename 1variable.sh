@@ -22,7 +22,7 @@ echo "what is todays date $date"
 
 echo "Enter your username:"
 
-read name
+read username
 
 echo "$name"
 
