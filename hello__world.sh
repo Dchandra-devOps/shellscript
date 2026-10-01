@@ -34,7 +34,7 @@ echo "$name"
 
 echo "Please enter your name::"
 
-read -s name
+read -p name
 
 echo "$name"
 
