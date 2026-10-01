@@ -14,7 +14,24 @@ echo "Prient name of script or filename $0"
 
 echo "Prient status code of previous line of code  $?"
 
-echo "print current working directory $pwd"
+echo "print current working directory $PWD"
+
+echo "who is runnig this script $USER"
+
+echo "home directory $HOME"
+
+echo "PID of the current script $$"
+
+
+
+
+
+
+echo "line number $LINENO"
+
+echo "script executed in seconds $SECONDS"
+
+echo "random number $RANDOM"
 
 
 
