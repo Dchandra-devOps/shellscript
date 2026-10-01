@@ -30,7 +30,7 @@ echo "$name"
 
 echo "Enter your username:"
 
-read -p username
+read -s username
 
 echo "$name"
 
