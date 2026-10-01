@@ -1,35 +1,21 @@
-#!/bin/bash/
+#!/bin/bash 
 
-echo "practice makes mens perfect"
-
-#assigning values to vraibles
-
-name="chandu"
-echo "Hi $name"
-
-#passing values to varaibles from command line
-name=$person_name
-
-echo "Hi $name, how are you $name"
-
-#executing command with in the sheel and get the value
-date=$(date)
-what is todays date $date
+#special varaibels
 
 
-#hideing usename and password
+echo "Learning $1,$2,$3"
 
-echo "Enter your username:"
+echo "All varaibels passed to script $@"
+echo "first variables $1"
 
-read name
+echo "Number of variables passed to script $#"
 
-echo "name"
+echo "Prient name of script or filename $0"
+
+echo "Prient status code of previous line of code  $?"
+
+echo "print current working directory $pwd"
 
 
 
-echo "Enter your username:"
-
-read -p name
-
-echo "name"
 
