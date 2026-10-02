@@ -19,7 +19,7 @@ fi
 
 dnf list installed mysql
 
-if [ $? nq 0 ]; then
+if [ $? -nq 0 ]; then
  echo "Lets install mysql"
  dnf install mysql -y
  VALIDATE mysql $? 
@@ -29,10 +29,10 @@ fi
 
 dnf list installed nginx
 
-if [ $? nq 0 ]; then
+if [ $? -nq 0 ]; then
  echo "Lets install mysql"
  dnf install nginx -y
- VALIDATEs nginx $? 
+ VALIDATE nginx $? 
 else
  echo "nginx alredy installed"
 fi
