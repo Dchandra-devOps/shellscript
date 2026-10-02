@@ -1,4 +1,4 @@
-#!bin/bash/
+#!/bin/bash/
 
 echo "practice makes mens perfect"
 

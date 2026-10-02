@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 USERID=$(id -u)
 
@@ -22,7 +22,7 @@ dnf list installed mysql
 if [ $? nq 0 ]; then
  echo "Lets install mysql"
  dnf install mysql -y
- VALIDATE() mysql $? 
+ VALIDATE mysql $? 
 else
  echo "mysql alredy installed"
 fi   
@@ -32,7 +32,7 @@ dnf list installed nginx
 if [ $? nq 0 ]; then
  echo "Lets install mysql"
  dnf install nginx -y
- VALIDATE() nginx $? 
+ VALIDATEs nginx $? 
 else
  echo "nginx alredy installed"
 fi
