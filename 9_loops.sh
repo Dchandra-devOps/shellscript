@@ -11,6 +11,9 @@ if [ $USERID -ne 0 ]; then
  exit 1
 fi
 
+# first arg -> what are you trying to install
+# second arg -> exit code
+
 VALIDATE() {
 if [ $2 -eq 0 ]; then
  echo "$1 installed succesfully" | tee -a $LOGFILE
