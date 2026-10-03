@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# tee this command push the logs into log directory and also print the logs in terminal 
+
 USERID=$(id -u)
 LOGDIR=/home/ec2-user/shellscript/shell_logs
 LOGFILE="$LOGDIR/$0.log"
@@ -11,9 +13,9 @@ fi
 
 VALIDATE() {
 if [ $2 -eq 0 ]; then
- echo "$1 installed succesfully" &>> $LOGFILE
+ echo "$1 installed succesfully" | tee -a $LOGFILE
 else
- echo "$1 failed" &>> $LOGFILE
+ echo "$1 failed" | tee -a $LOGFILE
 
 fi  
 
