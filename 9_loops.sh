@@ -32,7 +32,7 @@ do
     dnf install $package -y               &>> $LOGFILE
     VALIDATE "Installing $package" $?
   else
-     echo "$package alreday installed"     
+    echo "$package alreday installed"     
   fi   
 
 done
