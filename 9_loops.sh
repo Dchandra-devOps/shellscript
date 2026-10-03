@@ -28,7 +28,7 @@ for package in $@
 do
   echo "$TIMESTAMP installing  $package"
   dnf list installed module $package      &>> $LOGFILE
-  if [ $? ne- 0 ] then;
+  if [ $? ne- 0 ]; then
     dnf install $package -y               &>> $LOGFILE
     VALIDATE "Installing $package" $?
   else
